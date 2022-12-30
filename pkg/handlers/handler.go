@@ -21,6 +21,21 @@ func About(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "about.page.tmpl")
 }
 
+// About is the handler for the about page
+func Services(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "services.page.tmpl")
+}
+
+// blog is the handler for the about page
+func Blog(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "blog.page.tmpl")
+}
+
+// blog is the handler for the about page
+func Contact(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "contact.page.tmpl")
+}
+
 // Login is the handler for the about page
 func Login(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "login.page.tmpl")
